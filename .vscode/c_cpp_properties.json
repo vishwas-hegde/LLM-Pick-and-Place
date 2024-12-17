@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/vishwas/LLM-Pick-and-Place/install/ros2_grasping/include/**",
+        "/home/vishwas/LLM-Pick-and-Place/install/ros2_data/include/**",
+        "/home/vishwas/LLM-Pick-and-Place/install/gazebo_ros2_control/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/vishwas/LLM-Pick-and-Place/something/gazebo_ros2_control/gazebo_ros2_control/include/**",
+        "/home/vishwas/LLM-Pick-and-Place/src/gazebo_ros2_control/gazebo_ros2_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
