@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="cuboid">
+  <link name="cuboid">
+    <collision>
+      <geometry>
+        <box size="0.05 0.1 0.03"/>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.05 0.1 0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.4"/>
+      <inertia ixx="0.000025" ixy="0.0" ixz="0.0" iyy="0.000035" iyz="0.0" izz="0.000045"/>
+    </inertial>
+  </link>
+  <gazebo reference="cuboid">
+    <material>Gazebo/Green</material>
+  </gazebo>
+</robot>

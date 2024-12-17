@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Add a table -->
+    <include>
+      <name>table</name>
+      <pose>1.5 0 0 0 0 0</pose>
+      <uri>model://table</uri>
+    </include>
+
+    <scene>
+      <shadows>0</shadows>
+    </scene>
+
+    <!-- GAZEBO PLUGINS: -->
+    <!-- The following plugins must be activated for the ros2_grasping to effectively work: -->
+
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+      <ros>
+        <namespace>/ros2_grasp</namespace>
+        <argument>model_states:=model_states</argument>
+        <argument>link_states:=link_states</argument>
+      </ros>
+      <update_rate>1.0</update_rate>
+    </plugin>
+
+    <plugin name="gazebo_ros_properties" filename="libgazebo_ros_properties.so">
+      <ros>
+        <namespace>/ros2_grasp</namespace>
+      </ros>
+    </plugin>
+
+    <!-- <include>
+      <name>conveyor_belt</name>
+      <pose>0.5 -0.2 -0.4 0 0 0</pose>
+      <uri>model://conveyor_belt</uri>
+    </include> -->
+
+     <!-- Spotlight -->
+    <!-- <light name="spotlight" type="spot">
+      <pose>0.3 -0.3 1 0 0 0</pose>
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+      <specular>0.5 0.5 0.5 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0.1</inner_angle>
+        <outer_angle>0.5</outer_angle>
+        <falloff>0.8</falloff>
+      </spot>
+      <cast_shadows>true</cast_shadows>
+    </light> -->
+
+  </world>
+</sdf>

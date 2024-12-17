@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<robot name="rectangular_prism">
+
+  <!-- Define the main link for the rectangular prism -->
+  <link name="rectangular_prism">
+
+    <!-- Collision properties -->
+    <collision>
+      <geometry>
+        <box size="0.06 0.08 0.02" />
+      </geometry>
+    </collision>
+
+    <!-- Visual properties -->
+    <visual>
+      <geometry>
+        <box size="0.06 0.08 0.02" />
+      </geometry>
+    </visual>
+
+    <!-- Inertial properties -->
+    <inertial>
+      <mass value="0.5" />
+      <inertia 
+        ixx="0.000035" ixy="0.0" ixz="0.0" 
+        iyy="0.00004" iyz="0.0" 
+        izz="0.000045" />
+    </inertial>
+
+  </link>
+
+</robot>
