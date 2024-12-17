@@ -13,7 +13,7 @@
     <!-- Add a table -->
     <include>
       <name>table</name>
-      <pose>1.5 0 0 0 0 0</pose>
+      <pose>0.5 0 -1.0 0 0 1.57</pose>
       <uri>model://table</uri>
     </include>
 
